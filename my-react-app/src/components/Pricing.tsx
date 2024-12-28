@@ -3,22 +3,22 @@
 // const plans = [
 //   {
 //     name: 'Basic',
-//     price: '$99',
+//     price: '₹99',
 //     features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4']
 //   },
 //   {
 //     name: 'Pro',
-//     price: '$199',
+//     price: '₹199',
 //     features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4']
 //   },
 //   {
 //     name: 'Enterprise',
-//     price: '$299',
+//     price: '₹299',
 //     features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4']
 //   },
 //   {
 //     name: 'Ultimate',
-//     price: '$399',
+//     price: '₹399',
 //     features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4']
 //   }
 // ];
@@ -80,7 +80,7 @@ interface PlanDuration {
     const [selectedDuration, setSelectedDuration] = React.useState(0);
   
     return (
-      <div className={`bg-white rounded-xl p-6 shadow-sm relative ${isPopular ? 'border-2 border-green-600' : ''}`}>
+      <div className={`bg-white rounded-xl p-6 shadow-sm relative ₹{isPopular ? 'border-2 border-green-600' : ''}`}>
         {isPopular && (
           <div className="absolute -top-4 left-1/2 -translate-x-1/2">
             <span className="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
@@ -97,7 +97,7 @@ interface PlanDuration {
             <button
               key={index}
               onClick={() => setSelectedDuration(index)}
-              className={`flex-1 p-2 text-sm rounded ${
+              className={`flex-1 p-2 text-sm rounded ₹{
                 selectedDuration === index
                   ? 'bg-green-600 text-white'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -118,11 +118,11 @@ interface PlanDuration {
         <div className="mb-6">
           <div className="flex items-baseline gap-2">
             <span className="text-3xl font-bold">
-              ${durations[selectedDuration].price}
+              ₹{durations[selectedDuration].price}
             </span>
             {durations[selectedDuration].discount && (
               <span className="text-gray-500 line-through text-sm">
-                ${durations[selectedDuration].price + durations[selectedDuration].discount}
+                ₹{durations[selectedDuration].price + durations[selectedDuration].discount}
               </span>
             )}
           </div>

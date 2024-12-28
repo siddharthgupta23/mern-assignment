@@ -4,9 +4,9 @@
     "main": "dist/server.js",
     "type": "module",
     "scripts": {
-        "dev": "ts-node src/server.ts",
-        "build": "tsc",
-        "start": "node dist/server.js"
+        "start": "node dist/server.js",
+        "dev": "nodemon src/server.ts",
+        "build": "tsc"
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
@@ -17,7 +17,6 @@
         "jsonwebtoken": "^9.0.2",
         "mongoose": "^7.6.3",
         "nodemodule": "^0.3.0",
-        "path": "^0.12.7",
         "react-router-dom": "^7.1.1"
     },
     "devDependencies": {
