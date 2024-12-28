@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "nodemon src/index.js",
-         "start": "node src/index.js"
+        "start": "node src/index.js"
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
@@ -16,6 +16,7 @@
         "jsonwebtoken": "^9.0.2",
         "mongoose": "^7.6.3",
         "nodemodule": "^0.3.0",
+        "path": "^0.12.7",
         "react-router-dom": "^7.1.1"
     },
     "devDependencies": {
