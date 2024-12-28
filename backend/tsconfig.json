@@ -1,15 +1,14 @@
 {
-  "compilerOptions": {
-    "target": "ES6",                   // Target ECMAScript 6
-    "module": "ESNext",                // Use ES modules (works with ES6 import/export)
-    "moduleResolution": "node",        // Node.js module resolution
-    "outDir": "./dist",                // Output compiled files to the 'dist' folder
-    "esModuleInterop": true,           // For compatibility with commonjs modules
-    "skipLibCheck": true,              // Skip type checking for declaration files
-    "forceConsistentCasingInFileNames": true // Ensure consistent file casing
-  },
-  "include": ["src/**/*.ts"],           // Include all TypeScript files in the 'src' folder
-  "exclude": ["node_modules"] ,
-        // Exclude node_modules from compilation
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
 }
-

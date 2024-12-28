@@ -1,12 +1,12 @@
 {
     "name": "skillup-backend",
     "version": "1.0.0",
-    "main": "src/server.ts",
+    "main": "dist/server.js",
     "type": "module",
     "scripts": {
-        "dev": "nodemon src/server.ts",
+        "dev": "ts-node src/server.ts",
         "build": "tsc",
-        "start": "node src/server.ts"
+        "start": "node dist/server.js"
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
