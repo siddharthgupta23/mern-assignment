@@ -1,9 +1,9 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import connectDB from './config/database.js';
-import enrollmentRoutes from './routes/enrollmentRoutes.js';
-import adminRoutes from './routes/adminRoutes.js';
+import connectDB from './config/database';
+import enrollmentRoutes from './routes/enrollmentRoutes';
+import adminRoutes from './routes/adminRoutes';
 import path from "path";
 dotenv.config();
 const app = express();
