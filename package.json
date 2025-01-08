@@ -1,7 +1,7 @@
 {
     "name": "project",
     "version": "1.0.0",
-    "main": "index.ts",
+    "main": "main.tsx",
     "scripts": {
       "build": "npm install --prefix backend && npm install --prefix my-react-app && npm run build --prefix my-react-app",
       "start": "npm run start --prefix backend && npm run dev --prefix my-react-app "
