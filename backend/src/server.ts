@@ -28,6 +28,10 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+app.get('/', (req, res) => {
+  res.send('Welcome to the Backend API. Use /api/enrollments or /api/admin/login for endpoints.');
+});
+
 
 // use skillup
 // db.admins.insertOne({
