@@ -4,9 +4,7 @@
     {
       "src": "src/**/*.ts",
       "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["src/**/*"]
-      }
+
     }
   ],
   "routes": [
